@@ -28,12 +28,14 @@ a{
   height: 100vh;
   padding: 32px;
   background-color: $color-secondary;
+  .box{
+    height:90%;
+  }
 }
 
 .menu{
   margin-top: 32px;
   li{
-    font-size: 16px;
     line-height: 24px;
     margin-bottom: 26px;
     span{
@@ -43,9 +45,7 @@ a{
       display: flex;
     }
   }
-}
-
-.active{
+  .active{
   display: flex;
   color: $color-primary;
   &::before{
@@ -59,18 +59,17 @@ a{
     pointer-events: none;
   }
 }
+}
 
 .member{
-  // align-items: stretch;
   img{
     width: 40px;
     clip-path: circle(40%);
     margin-right: 16px;
-
   }
   .name{
     font-size: 16px;
-    line-height: 24px;
+    margin: 0;
     font-weight: 600;
     color: $color-dark;
   }
@@ -82,6 +81,9 @@ a{
   .time{
     font-size: 12px;
     line-height: 24px;
+  }
+  .box{
+    width: 100%;
   }
 }
 
